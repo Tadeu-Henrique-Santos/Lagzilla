@@ -1,0 +1,22 @@
+
+<div class="games-container">
+  <h1 class="page-title">Catálogo de Jogos</h1>
+  
+  <div class="games-grid">
+    <div class="game-card" *ngFor="let jogo of jogos">
+      <div class="game-image-container">
+        <img [src]="jogo.imagem" [alt]="jogo.nome" class="game-image">
+      </div>
+      
+      <div class="game-info">
+        <h3 class="game-title">{{ jogo.nome }}</h3>
+        <div class="game-details">
+          <span class="game-platform">{{ jogo.plataforma }}</span>
+          <span class="game-genre">{{ jogo.genero }}</span>
+        </div>
+        <div class="game-price">R$ {{ jogo.preco.toFixed(2) }}</div>
+        <button class="add-to-cart">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>

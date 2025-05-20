@@ -1,0 +1,9 @@
+.footer {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #666;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
