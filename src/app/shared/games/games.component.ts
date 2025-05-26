@@ -13,7 +13,7 @@ interface Game {
 
 @Component({
   selector: 'app-games',
-  imports: [ CommonModule,FormsModule ],
+  imports: [ CommonModule,FormsModule, ],
   templateUrl: './games.component.html',
   styleUrls: ['./games.component.css']
 })

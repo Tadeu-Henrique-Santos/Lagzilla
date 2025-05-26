@@ -1,0 +1,18 @@
+<div class="content-container">
+    <h1>{{ titulo }}</h1>
+    <form>
+           <label for="input-id">ID</label><br />
+           <input class="input-simples" id="input-id"   
+           name="input-id" placeholder="Digite o id"   type="text"
+                [(ngModel)]="produto.id"  />
+           <label for="input-nome">Nome</label><br />
+           <input class="input-simples" id="input-nome"   name="input-nome" placeholder="Digite o primeiro nome" 
+                 type="text" [(ngModel)]="produto.nome"  />
+           <label for="input-sobrenome">Descrição</label><br />
+           <input class="input-simples"  id="input-descricao"   
+           name="input-descricao" placeholder="Digite a descrição do produto"
+              type="text" [(ngModel)]="produto.descricao"  />          
+           <button class="input-submeter" (click)="submeter()">Cadastrar</button>
+           <button class="input-submeter" (click)="cancelar()">Cancelar</button>
+    </form>
+</div>

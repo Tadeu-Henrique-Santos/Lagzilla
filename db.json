@@ -1,0 +1,43 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "nome": "Enzo",
+      "sobrenome": "Ferrari",
+      "dtNascimento": "2005-01-10"
+    },
+    {
+      "id": "8",
+      "nome": "Marcos",
+      "sobrenome": "da Silva",
+      "dtNascimento": "1965-07-17"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Alexa",
+      "descricao": "Echo Show 5 (Última geração) | Smart display com Alexa, graves 2x mais potentes e som mais nítido | Cor Preta"
+    },
+    {
+      "id": "2",
+      "nome": "Notebook",
+      "descricao": "Notebook Intel Celeron Dual Core , 48 GB, 128 GB SSD W11 Home, 15,60 LED"
+    },
+    {
+      "id": "3",
+      "nome": "Ferrari",
+      "descricao": "LaFerrari Aperta"
+    },
+    {
+      "id": "4",
+      "nome": "Lamborghini",
+      "descricao": "Temerario Vermelha"
+    },
+    {
+      "id": "5",
+      "nome": "Renault",
+      "descricao": "Kwid 2025 esportivo"
+    }
+  ]
+}

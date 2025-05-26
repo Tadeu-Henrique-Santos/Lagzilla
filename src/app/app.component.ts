@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -21,10 +21,16 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'LAGZILLA';
   nome = 'Jogador';
-  textoBotao: string = 'clique aqui!';
-  mensagem: string = '';
-  sobrenome: string = '';
-
+  isEditable = true;
+	isUnchanged = true;
+  textoBotao: string = 'Clique aqui!';
+  botaoDesabilitado: boolean = false;
+  mensagem: string = 'Digitando Texto...'; 
+  sobrenome: any;
+  cidade: any;
+  onBotaoClicado() {
+       this.mensagem = 'Você clicou no botão!';
+  }
   // Dados dos jogos (substitua pelas suas imagens)
   jogos = [
     {
@@ -58,8 +64,4 @@ export class AppComponent {
       imagem: 'https://upload.wikimedia.org/wikipedia/en/6/6d/Bethesda_Starfield.jpg'
     }
   ];
-
-  onBotaoClicado() {
-    this.mensagem = `Olá ${this.nome} ${this.sobrenome}!`;
-  }
 }
