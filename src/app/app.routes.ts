@@ -8,7 +8,7 @@ import { ProdutoListagemComponent } from './pages/produto-listagem/produto-lista
 export const routes: Routes = [
     
      {
-        path: '',
+        path: 'login',
         component: PessoaLoginComponent,
         title: 'Login',
     },
@@ -47,5 +47,5 @@ export const routes: Routes = [
         component: ProdutoFormComponent,
         title: 'Formulário de Cadastro de Produtos',
     },
-    { path: '**', redirectTo: 'pessoas' }
+    { path: '**', redirectTo: 'produtos' }
 ];

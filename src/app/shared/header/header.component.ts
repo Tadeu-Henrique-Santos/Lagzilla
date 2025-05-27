@@ -13,12 +13,11 @@ export class HeaderComponent {
   showMobileMenu = false;
   
   menuItems = [
-    { label: 'Todos os Jogos', link: '/jogos', icon: '🎮' },
-    { label: 'Login Cliente', link: '/login', icon: '👤' },
-    { label: 'Login Admin', link: '/admin/login', icon: '🔐' }
+    { label: 'Todos os Jogos', link: '/app-games', icon: '🎮' },
+    { label: 'Login Cliente', link: 'app-pessoa-login', icon: '👤' },
+    { label: 'Login Admin', link: '.app-pessoa-login', icon: '🔐' }
   ];
 
-  toggleMenu() {
-    this.showMobileMenu = !this.showMobileMenu;
+  toggleMenu() {this.showMobileMenu = !this.showMobileMenu;
   }
 }
