@@ -12,10 +12,15 @@ export class PessoaLoginComponent {
 pessoas: any;
   constructor(private router: Router){}
   onBotaoClicado() {
-    if(this.login=="Marcos" && this.senha=="123"){
+    if(this.login=="Tadeu" && this.senha=="123"){
       alert("Login com sucesso!!!");
       this.router.navigate(['pessoas']);
     }
+     else if(this.login=="Lucas" && this.senha=="12345"){
+      alert("Login com sucesso!!!");
+      this.router.navigate(['Produto']);
+     }
+
     else{
       alert("Usuário ou senha inválidos!!!");
     }

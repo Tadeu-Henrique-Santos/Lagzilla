@@ -13,14 +13,14 @@ import { Pessoa } from '../../types/types';
 export class PessoaFormComponent {
   titulo = 'Cadastro de Pessoas';
   pessoaId?: number;
-  //Defino um objeto pessoa que será incluído ou alterado.
+
   pessoa: Pessoa = {} as Pessoa;
   constructor(
     private service: PessoaService,
     private router: Router,
     private route: ActivatedRoute
   ) {
-    //Verifico se é alteração ou inclusão
+ 
     this.pessoaId = Number(this.route.snapshot.params['id']);
     if (this.pessoaId) {
       service.buscarPorId(this.pessoaId).subscribe((pessoa) => {

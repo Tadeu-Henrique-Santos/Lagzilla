@@ -5,9 +5,16 @@ import { PessoaLoginComponent } from './pages/pessoa-login/pessoa-login.componen
 import { HeaderComponent } from './shared/header/header.component';
 import { ProdutoFormComponent } from './pages/produto-form/produto-form.component';
 import { ProdutoListagemComponent } from './pages/produto-listagem/produto-listagem.component';
+import { HomeComponent } from './pages/home/home.component';
 export const routes: Routes = [
     
-     {
+     
+   { 
+    path: '', 
+    component: HomeComponent, 
+    title: 'Home'
+   },
+   {
         path: 'login',
         component: PessoaLoginComponent,
         title: 'Login',
@@ -23,7 +30,7 @@ export const routes: Routes = [
         title: 'Listagem de Pessoas',
     },
     {
-        path: 'produtos', //Listagem de produtos
+        path: 'produtos',
         component: ProdutoListagemComponent,
         title: 'Listagem de Produtos',
     },
@@ -47,5 +54,5 @@ export const routes: Routes = [
         component: ProdutoFormComponent,
         title: 'Formulário de Cadastro de Produtos',
     },
-    { path: '**', redirectTo: 'produtos' }
+    { path: '**', redirectTo: 'login' }
 ];

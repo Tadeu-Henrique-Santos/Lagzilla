@@ -12,11 +12,12 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
   showMobileMenu = false;
   
-  menuItems = [
-    { label: 'Todos os Jogos', link: '/app-games', icon: '🎮' },
-    { label: 'Login Cliente', link: 'app-pessoa-login', icon: '👤' },
-    { label: 'Login Admin', link: '.app-pessoa-login', icon: '🔐' }
-  ];
+menuItems = [
+  { label: 'Página Inicial', link: '/Header', icon: '🏠' },
+  { label: 'Todos os Produtos', link: '/produtos', icon: '🎮' },
+  { label: 'Login', link: '/login-admin', icon: '🔑' }
+];
+
 
   toggleMenu() {this.showMobileMenu = !this.showMobileMenu;
   }

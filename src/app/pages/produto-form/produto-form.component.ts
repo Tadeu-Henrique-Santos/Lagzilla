@@ -7,6 +7,7 @@ import { ProdutoService } from '../../core/services/produto.service';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-produto-form',
+   standalone: true,
   imports: [ReactiveFormsModule, MatInputModule, MatButtonModule, FormsModule],
   templateUrl: './produto-form.component.html',
   styleUrl: './produto-form.component.css'

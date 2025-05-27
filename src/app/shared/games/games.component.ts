@@ -13,6 +13,7 @@ interface Game {
 
 @Component({
   selector: 'app-games',
+   standalone: true,
   imports: [ CommonModule,FormsModule, ],
   templateUrl: './games.component.html',
   styleUrls: ['./games.component.css']

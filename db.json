@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nome": "Lucas",
-      "sobrenome": "Benicio",
+      "sobrenome": "Beneficio",
       "dtNascimento": "2010-10-10"
     },
     {
@@ -20,11 +20,6 @@
     }
   ],
   "produtos": [
-    {
-      "id": "1",
-      "nome": "The Witcher 3: Wild Hunt",
-      "descricao":  "RPG"
-    },
     {
       "id": "2",
       "nome": "Starfield",
@@ -44,16 +39,6 @@
       "id": "5",
       "nome": "God of War",
       "descricao": "Ação-Aventura"
-    },
-     {
-      "id": "6",
-      "nome": "Horizon Zero Dawn",
-      "descricao": "Ação-Aventura"
     }
-
-
-
-
-
   ]
 }

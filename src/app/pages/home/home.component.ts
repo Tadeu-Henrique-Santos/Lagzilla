@@ -1,27 +1,34 @@
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./shared/header/header.component";
-import { FooterComponent } from './shared/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',
   standalone: true,
   imports: [
     RouterOutlet, 
-    HeaderComponent,
-    FooterComponent,
     FormsModule,
     CommonModule
   ],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  
-  
-  // Dados dos jogos (substitua pelas suas imagens)
+export class HomeComponent {
+  title = 'LAGZILLA';
+  nome = 'Jogador';
+  isEditable = true;
+	isUnchanged = true;
+  textoBotao: string = 'Clique aqui!';
+  botaoDesabilitado: boolean = false;
+  mensagem: string = 'Digitando Texto...'; 
+  sobrenome: any;
+  cidade: any;
+  onBotaoClicado() {
+       this.mensagem = 'Você é um cara 10!!';
+  }
+  // Dados dos jogos 
   jogos = [
     {
       nome: 'Cyberpunk 2077',
